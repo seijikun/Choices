@@ -228,11 +228,9 @@ $choices-z-index: 1;
 .#{$choices-selector}__list--dropdown {
   visibility: hidden;
   z-index: $choices-z-index;
-  position: absolute;
-  width: 100%;
+  position: fixed;
   background-color: $choices-bg-color-dropdown;
   border: 1px solid $choices-keyline-color;
-  top: 100%;
   margin-top: -1px;
   border-bottom-left-radius: $choices-border-radius;
   border-bottom-right-radius: $choices-border-radius;

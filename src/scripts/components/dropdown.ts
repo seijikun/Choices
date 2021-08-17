@@ -39,6 +39,13 @@ export default class Dropdown {
     this.element.classList.add(this.classNames.activeState);
     this.element.setAttribute('aria-expanded', 'true');
     this.isActive = true;
+    let parentElement = this.element.parentElement;
+    if(parentElement) {
+      let parentRect = parentElement.getBoundingClientRect();
+      this.element.style.width = parentRect.width + 'px';
+      this.element.style.top = (parentRect.y + parentRect.height) + 'px';
+      this.element.style.left = parentRect.x + 'px';
+    }
 
     return this;
   }

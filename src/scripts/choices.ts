@@ -2258,7 +2258,7 @@ class Choices {
           const isSelected = shouldPreselect ? true : choice.selected;
           const isDisabled = choice.disabled;
 
-          console.log(isDisabled, choice);
+          //console.log(isDisabled, choice);
 
           this._addChoice({
             value,
