@@ -230,11 +230,9 @@
 .choices__list--dropdown {
   visibility: hidden;
   z-index: 1;
-  position: absolute;
-  width: 100%;
+  position: fixed;
   background-color: #ffffff;
   border: 1px solid #dddddd;
-  top: 100%;
   margin-top: -1px;
   border-bottom-left-radius: 2.5px;
   border-bottom-right-radius: 2.5px;
